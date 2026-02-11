@@ -3,7 +3,7 @@ import { Image, ScrollView, StyleSheet, Text } from "react-native";
 
 export default function Index() {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <Image
         source={require("../assets/images/foto.png")}
         style={styles.image}
@@ -40,26 +40,25 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#000000",
+    paddingTop: 20,
+    paddingBottom: 50,
+    alignItems: "center",
   },
   image: {
     width: 100,
     height: 100,
     borderRadius: 100,
-    alignSelf: "center",
     marginTop: 50,
   },
   name: {
     fontSize: 20,
-    textAlign: "center",
     marginTop: 20,
     fontWeight: "bold",
     color: "#FFFFFF",
   },
   nim: {
     fontSize: 16,
-    textAlign: "center",
     marginTop: 10,
     color: "#ff00d4",
   },
